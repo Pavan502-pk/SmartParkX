@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outgoing</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="qr-code">
+                <img src="{{url_for('static',filename='output.png')}}" alt="">
+            </div>
+            <div class="output-details">
+                <table>
+                    <tr>
+                        <th>Vehicle Number:</th>
+                        <td>{{vehicle_number}}</td>
+                    </tr>
+                    <tr>
+                        <th>Vehicle Type: </th>
+                        <td>{{vehicle_type}}</td>
+                    </tr>
+                    <tr>
+                        <th>Slot Allocated: </th>
+                        <td>{{slotallocated}}</td>
+                    </tr>
+                    <tr>
+                        <th>Check In-Time: </th>
+                        <td>{{check_in_time}}</td>
+                    </tr>
+                    <tr>
+                        <th>Check Out-Time: </th>
+                        <td>{{check_out_time}}</td>
+                    </tr>
+                    <tr>
+                        <th>Check In-Date: </th>
+                        <td>{{check_in_date}}</td>
+                    </tr>
+                    <tr>
+                        <th>Check Out-Date: </th>
+                        <td>{{check_out_date}}</td>
+                    </tr>
+                    <tr>
+                        <th>Phone No.: </th>
+                        <td>{{phone_number}}</td>
+                    </tr>
+                    <tr>
+                        <th class="amount">Total Amount: </th>
+                        <td class="price">{{amount}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

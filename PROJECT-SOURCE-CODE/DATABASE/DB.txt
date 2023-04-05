@@ -1,0 +1,35 @@
+------------ Connection Details (onCloud) ------------
+
+host		=>		sql12.freesqldatabase.com
+user		=> 		sql12608644
+password	=>		tWjGz515yZ
+database	=>		sql12608644
+port		=>		3306
+
+
+---------- TABLE CREATION --------
+
+CREATE TABLE `PARKINGSYSTEM` (
+	`ID` INT NOT NULL AUTO_INCREMENT,
+	`VEHICLE_NUMBER` VARCHAR(255),
+	`VEHICLE_TYPE` VARCHAR(6),
+	`SPACE_ALLOCATED` INT,
+	`CHECK_IN_TIME` TIME,
+	`CHECK_OUT_TIME` TIME,
+	`CHECK_IN_DATE` DATE,
+	`CHECK_OUT_DATE` DATE,
+	`AMOUNT` FLOAT,
+	`PHONE` VARCHAR(10),
+	PRIMARY KEY (ID)
+) ENGINE=InnoDB
+
+
+---------------- INSERTION --------------
+
+INSERT INTO PARKINGSYSTEM(VEHICLE_NUMBER, VEHICLE_TYPE, SPACE_ALLOCATED, CHECK_IN_TIME, CHECK_OUT_TIME, CHECK_IN_DATE, CHECK_OUT_DATE, AMOUNT, PHONE)VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s);
+
+
+
+-------------------- Fetching MAX ID ----------------
+
+SELECT * FROM  PARKINGSYSTEM WHERE id=(SELECT MAX(id) FROM PARKINGSYSTEM
