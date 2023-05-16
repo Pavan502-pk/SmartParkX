@@ -1,9 +1,9 @@
 ------------ Connection Details (onCloud) ------------
 
-host		=>		sql12.freesqldatabase.com
-user		=> 		sql12608644
-password	=>		tWjGz515yZ
-database	=>		sql12608644
+host		=>		db4free.net
+user		=> 		user_pavan
+password	=>		pass1234
+database	=>		projectprking
 port		=>		3306
 
 
