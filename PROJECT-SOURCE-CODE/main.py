@@ -118,7 +118,7 @@ def getting_db_details_to_show_final_result():
     
     # Database Part
 
-    mydb = mysql.connector.connect(host="sql12.freesqldatabase.com",user="sql12608644",password="tWjGz515yZ",database="sql12608644")
+    mydb = mysql.connector.connect(host="db4free.net",user="user_pavan",password="pass1234",database="projectprking")
     cursor=mydb.cursor()
     mySql_fetch_query="SELECT * FROM  PARKINGSYSTEM WHERE id=(SELECT MAX(id) FROM PARKINGSYSTEM);"
     cursor.execute(mySql_fetch_query)
