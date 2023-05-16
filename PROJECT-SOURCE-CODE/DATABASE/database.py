@@ -3,7 +3,7 @@ import mysql.connector
 
 def DATABASE_DETAILS(vehicleno , vehicleType , allocspace , cin , cout , cindate , coutdate , amnt ,phone):
   
-  mydb = mysql.connector.connect(host="sql12.freesqldatabase.com",user="sql12608644",password="tWjGz515yZ",database="sql12608644")
+  mydb = mysql.connector.connect(host="db4free.net",user="user_pavan",password="pass1234",database="projectprking")
 
   myconn = mydb.cursor()
 
